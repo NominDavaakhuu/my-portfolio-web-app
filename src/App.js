@@ -1,4 +1,3 @@
-import './App.css';
 import { AllRoutes } from "./routes/AllRoutes";
 import {Header} from "./components/Header";
 import {Footer } from "./components/Footer";
@@ -6,9 +5,9 @@ import {Footer } from "./components/Footer";
 export default function App() {
   return (
     <>
-    <Header/>
+      <Header/>
       <AllRoutes />
-    <Footer/>
+      <Footer/>
     </>
   )
 }
