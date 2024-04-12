@@ -7,11 +7,9 @@ const experienceData = [
       duration: "May 2020 - Dec 2021",
       location: "Ulaanbaatar, Mongolia",
       responsibility: [
-        `bookkeeping, archieving`,
-        `posting journal entries`,
-        `updating financial statements`,
-        `handle monthly, quarterly and annual closings`,
-        `compute taxes and prepare tax returns`,
+        `Posting journal entries`,
+        `Handle monthly, quarterly and annual closings`,
+        `Compute taxes and prepare tax returns`,
       ],
     },
     {
@@ -22,15 +20,10 @@ const experienceData = [
       duration: "Dec 2021 - Jun 2023",
       location: "Ulaanbaatar, Mongolia",
       responsibility: [
-        `manage all accounting transactions`,
-        `updating financial statements`,
-        `maintaining accounts receivable and accounts payable`,
-        `handle monthly, quarterly and annual closings`,
-        `compute taxes and prepare tax returns`,
-        `preparing Tax reports`,
-        `preparing financial reports`,
-        `manage balance sheets and profit/loss statements.`,
-        `prepare budget forecasts`
+        `Manage all accounting transactions`,
+        `Preparing Financial and Tax reports`,
+        `Manage balance sheets and profit/loss statements.`,
+        `Prepare budget forecasts`
       ],
     }
   ];
@@ -45,11 +38,6 @@ const experienceData = [
       name: "National University of Mongolia",
       status: "Bachelor of Business Administration",
       year: "2020",
-    },
-    {
-      name: "Sod High School",
-      status: "High School Diploma",
-      year: "2016",
     }
   ];
   
@@ -70,7 +58,7 @@ const experienceData = [
       date: "Issued Jun 2023 · No Expiration Date"
     }
   ];
-  const toolsData =["CSS3", "HTML5", "JavaScript"];
+  const toolsData =["CSS3", "HTML5", "JavaScript","React.js","Tailwind css","Figma", "Git","Github"];
   
   export { experienceData, educationData, certificationData, toolsData };
   
