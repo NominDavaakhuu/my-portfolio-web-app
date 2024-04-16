@@ -1,15 +1,32 @@
 import { useTitle } from "../hooks/useTitle";
+import { Card } from "../components/Card";
+import { useEffect, useState } from "react";
+
 export const Portfolio = () => {
   useTitle("Portfolio");
+  const[projects, setProjects]=useState([]);
+  useEffect(()=> {
+    async function fetchProjects(){
+      //wait fetch request to complete
+      const url=`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUWg4JJ8Hgsqry0IwKbWfLxQ&key=AIzaSyCkenMxE5N8Zavnp_6eRZEATQoyOIgomDM`
+      const response =await fetch(url);
+      //store it in data
+      const data= await response.json();
+      const projectItems = data.items.map(item => item.snippet)
+      
+      setProjects(projectItems);
+    }
+    fetchProjects();
+  },[])
   return (
-    <div>A page that displays your creations .
-
-    For top-marks, this page must be populated from an external API.
-    
-    If you are unable to demonstrate this page calling an external API, and perhaps, instead rendering data from an array of Javascript objects, your marks will significantly decrease.
-    
-    Search, with a form that allows users to search for items based on certain criteria (e.g., selected from a drop-down list, entered into a text box, or by automatically determining the user’s location using HTML5 Geolocation API)
-    
-    When clicked/tapped, each item must open to a page for itself</div>
+    <main>
+      <section className="max-w-7xl mx-auto py-7">
+        <div className="flex justify-start flex-wrap">
+          {projects.map((project, projectTitle)=>(
+            <Card key={projectTitle} project={project}/>
+          ))}
+        </div>
+      </section>
+    </main>
   )
 }

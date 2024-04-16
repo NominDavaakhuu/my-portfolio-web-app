@@ -5,7 +5,7 @@ const WorkExperience = () => {
     <section>
       {experienceData.map((info, index) => (
         <section key={index}>
-          <h3 className="text-sky-400/100 font-semibold uppercase">{info.jobtitle}</h3>
+          <h3 className="text-sky-500 font-semibold uppercase">{info.jobtitle}</h3>
           <section className="font-normal text-gray-600">
             <p>{info.companyname} - {info.worktype}</p>
           </section>
