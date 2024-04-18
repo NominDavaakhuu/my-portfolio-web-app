@@ -1,9 +1,9 @@
-import { useTitle } from "../hooks/useTitle";
-import Education from "./About/Education";
-import WorkExperience from "./About/WorkExperience";
-import Certifications from "./About/Certifications";
-import Tools from "./About/Tools";
-import Profile from "../assets/profile.jpg";
+import { useTitle } from "../../hooks/useTitle";
+import Education from "./Education";
+import WorkExperience from "./WorkExperience";
+import Certifications from "./Certifications";
+import Tools from "./Tools";
+import Profile from "../../assets/profile.jpg";
 
 const ResumeStyle ="inline-block w-full p-4 rounded-ss-lg bg-gray-100 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600";
 const BoxStyle="p-4 bg-white md:p-8 dark:bg-gray-800";
@@ -33,7 +33,6 @@ export const Resume = () => {
           <li className="w-full">
             <h1 className={ResumeStyle}>SKILLS</h1>
             <div className={BoxStyle} ><Tools/></div>  
-            
           </li>
         </ul>
     </div>

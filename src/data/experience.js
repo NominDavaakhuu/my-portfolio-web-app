@@ -5,6 +5,7 @@ const experienceData = [
       companyname: "Nomin Holding LLC",
       worktype: "Full-time",
       duration: "May 2020 - Dec 2021",
+      year: '2020',
       location: "Ulaanbaatar, Mongolia",
       responsibility: [
         `Posting journal entries`,
@@ -18,6 +19,7 @@ const experienceData = [
       companyname: "Steppelink Holding LLC",
       worktype: "Full-time",
       duration: "Dec 2021 - Jun 2023",
+      year: '2021',
       location: "Ulaanbaatar, Mongolia",
       responsibility: [
         `Manage all accounting transactions`,
@@ -58,7 +60,7 @@ const experienceData = [
       date: "Issued Jun 2023 · No Expiration Date"
     }
   ];
-  const toolsData =["CSS3", "HTML5", "JavaScript","React.js","Tailwind css","Figma", "Git","Github"];
+  const toolsData =["CSS3", "HTML5", "JavaScript","React.js","Tailwind css","Figma", "Git","Github","Visual Studio Code"];
   
   export { experienceData, educationData, certificationData, toolsData };
   

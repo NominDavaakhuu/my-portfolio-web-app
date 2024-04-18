@@ -3,7 +3,7 @@ import { toolsData } from "../../data/experience"
 const Tools = () => {
   return (
     <section >
-        <section class="space-y-4 text-gray-500 dark:text-gray-400">
+        <section className="space-y-4 text-gray-500 dark:text-gray-400">
             {toolsData.map((info,index)=>(  
                 <div className="flex items-center" key={index}>
                   <svg className="flex-shrink-0 w-3.5 h-3.5 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
