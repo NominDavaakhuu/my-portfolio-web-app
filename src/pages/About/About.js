@@ -1,10 +1,10 @@
-
 import { useTitle } from "../../hooks/useTitle";
 import ToolsAbout from "./ToolsAbout";
-export const About = () => {
+const About = () => {
   useTitle("About")
   return (
-    <section className=" text-sky-500 shadow-inner bg-white dark:bg-gray-800">
+    <>
+     <section className=" text-sky-500 shadow-inner bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto py-7 ">
           <h1 className="m-10 text-4xl font-extrabold tracking-tight leading-none dark:text-white text-gray-900 md:text-4xl lg:text-5xl">ABOUT ME</h1>
           <div className='m-10'>
@@ -15,5 +15,7 @@ export const About = () => {
           <ToolsAbout/>
        </div>
     </section>
+    </>
   );
 };
+export default About;

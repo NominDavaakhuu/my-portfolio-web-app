@@ -1,10 +1,10 @@
 import { useTitle } from "../hooks/useTitle";
-import { NavLink } from "react-router-dom"; 
-import { About} from "./About/About";
-import { Contact } from "./About/Contact";
 import { useRef } from "react";
+import { NavLink } from "react-router-dom"; 
+import  About from "./About/About";
+import  Contact  from "./About/Contact";
 
-export const Home = () => {
+const Home = () => {
     useTitle("Home");
     const contactRef= useRef(null);
     return (
@@ -32,4 +32,5 @@ export const Home = () => {
             </div>    
         </section>
     );
-}
+};
+export default Home;
