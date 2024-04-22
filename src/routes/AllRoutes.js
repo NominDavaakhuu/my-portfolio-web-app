@@ -15,7 +15,7 @@ export const AllRoutes = () => {
         <Route path="/about" element={<About/>}  />
         <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<Portfolio apiPath="playlistItems?part=snippet&playlistId=UUWg4JJ8Hgsqry0IwKbWfLxQ&key"/>} />
-        <Route path="/project/:title" element={<ProjectDetail/>}/>
+        <Route path="/project/:title" element={<ProjectDetail apiPath="playlistItems?part=snippet&playlistId=UUWg4JJ8Hgsqry0IwKbWfLxQ&key"/>}/>
         <Route path="search" element={<Search/>} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

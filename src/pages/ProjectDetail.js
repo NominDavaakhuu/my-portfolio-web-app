@@ -1,25 +1,23 @@
-import { useTitle } from "../hooks/useTitle";
+import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
-import { Card } from "../components/Card";
+import {CardDetailed} from "../components/CardDetailed";
 
-//FIX
-
-const ProjectDetail = ({apiPath, projectTitle}) => {
+const ProjectDetail = ({apiPath}) => {
+  const { title } = useParams(); 
   const {data: projects}= useFetch(apiPath);
-  useTitle("Project Detail");
-  const filteredProjects = projects.filter(project => project.title === projectTitle);
+  const matchingProjects = projects.filter(project => project.title === title);
+
   return (
-    <section className="max-w-7xl mx-auto py-7">
-    <h1 className="title-font text-gray-900 font-semibold  m-10"> PROJECT: </h1>
-    <div className="flex justify-start flex-wrap">
-      {filteredProjects.length > 0 ? (
-        filteredProjects.map(project => <Card key={projectTitle} project={project} />)
-      ) : (
-        <p>No project found with title "{projectTitle}"</p>
-      )}
-    </div>
-  </section>
+    <main>
+      <section className="max-w-7xl mx-auto py-7 grid grid-cols-2">
+        <h1 className=" text-gray-900 text-4xl font-semibold place-content-center uppercase">  Project: {title}</h1>
+        <div className="flex justify-center flex-wrap my-10">
+          {matchingProjects.map((project, index) => (
+          <CardDetailed key={index} project={project} />
+          ))}
+        </div>
+      </section>
+    </main>
   );
 };
 export default ProjectDetail;
-

@@ -1,10 +1,9 @@
-import { useTitle } from "../hooks/useTitle";
+
 import { useFetch } from "../hooks/useFetch";
 import { Card } from "../components/Card";
 
-
 const Portfolio = ({apiPath}) => {
-  useTitle("Portfolio");
+
   const {data: projects}= useFetch(apiPath);
 
   return (
@@ -15,8 +14,8 @@ const Portfolio = ({apiPath}) => {
            I am driven by a fervent desire to embark on new ventures, to explore uncharted territories, and to further refine my craft."
         </h1>
         <div className="flex justify-start flex-wrap">
-          {projects.map((project, projectTitle)=>(
-            <Card key={projectTitle} project={project}/>
+          {projects.map((project, index)=>(
+            <Card key={index} project={project}/>
           ))}
         </div>
       </section>

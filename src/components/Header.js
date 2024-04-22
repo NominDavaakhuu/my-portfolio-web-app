@@ -15,7 +15,6 @@ useEffect(() => {
   } else {
     document.documentElement.classList.remove('dark');
   }
-  
 }, [darkMode]);
   //navigation style
   const activeClass= "text-base block py-2 px-3 text-white bg-sky-500 md:bg-transparent md:text-sky-500 md:p-0 md:dark:text-sky-500";
