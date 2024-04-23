@@ -1,9 +1,7 @@
-
 import { useFetch } from "../hooks/useFetch";
 import { Card } from "../components/Card";
 
 const Portfolio = ({apiPath}) => {
-
   const {data: projects}= useFetch(apiPath);
 
   return (

@@ -9,20 +9,23 @@ const [darkMode, setDarkMode] = useState( JSON.parse(localStorage.getItem("darkM
 const navigate = useNavigate();
 useEffect(() => {
   localStorage.setItem("darkMode", JSON.stringify(darkMode));
-  //as instructed on tailwindCss
+  //as instructed on tailwindCSS
   if(darkMode){
     document.documentElement.classList.add('dark');
   } else {
     document.documentElement.classList.remove('dark');
   }
 }, [darkMode]);
-  //navigation style
+  //navigation style tailwindCSS
   const activeClass= "text-base block py-2 px-3 text-white bg-sky-500 md:bg-transparent md:text-sky-500 md:p-0 md:dark:text-sky-500";
   const inActiveClass= "text-base block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-600 md:p-0 md:dark:hover:text-sky-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
-  //search handler
+  //SEARCH HANDLER :executed when a form submission event occurs
   const handleSubmit = (event) => {
+    //prevents page to reload
     event.preventDefault();
+    //extracts the value entered to search input field from the form submission event
     const queryTerm = event.target.search.value;
+    //clears the search input field after submission
     event.target.reset();
     return navigate(`/search?q=${queryTerm}`);
   }

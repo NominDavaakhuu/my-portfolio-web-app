@@ -3,7 +3,9 @@ import { useFetch } from "../hooks/useFetch";
 import {CardDetailed} from "../components/CardDetailed";
 
 const ProjectDetail = ({apiPath}) => {
+  //extract title param from URL
   const { title } = useParams(); 
+  //destructures data property from the result into const named projects
   const {data: projects}= useFetch(apiPath);
   const matchingProjects = projects.filter(project => project.title === title);
 
