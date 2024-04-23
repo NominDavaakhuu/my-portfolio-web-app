@@ -1,8 +1,0 @@
-API Key: AIzaSyCkenMxE5N8Zavnp_6eRZEATQoyOIgomDM
-channel ID: UCWg4JJ8Hgsqry0IwKbWfLxQ
-
-list url: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUWg4JJ8Hgsqry0IwKbWfLxQ&key=AIzaSyCkenMxE5N8Zavnp_6eRZEATQoyOIgomDM
-search url: https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCWg4JJ8Hgsqry0IwKbWfLxQ&key=AIzaSyCkenMxE5N8Zavnp_6eRZEATQoyOIgomDM
-
-
-

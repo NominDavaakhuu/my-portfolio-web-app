@@ -1,8 +1,8 @@
 import { useTitle } from "../hooks/useTitle";
 import { useRef } from "react";
 import { NavLink } from "react-router-dom"; 
-import  About from "./About/About";
-import  Contact  from "./About/Contact";
+import About from "./About/About";
+import ContactForm  from './Contact';
 
 const Home = () => {
     useTitle("Home");
@@ -28,7 +28,7 @@ const Home = () => {
             </div>
             <About/>
             <div ref={contactRef}>
-            <Contact/> 
+            <ContactForm/> 
             </div>    
         </section>
     );
