@@ -1,5 +1,4 @@
 import { Link, NavLink ,useNavigate} from "react-router-dom"; 
-import Logo from "../assets/logo.png";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -34,8 +33,7 @@ useEffect(() => {
          <nav className="bg-white shadow border-gray-200 dark:bg-gray-900">
            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
            <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src={Logo} className="h-8" alt="Nomin Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Nomin</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Nomin-Erdene</span>
            </Link>
          
            <div id="mobile-nav" className="flex md:order-2">

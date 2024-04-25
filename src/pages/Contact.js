@@ -38,7 +38,7 @@ const ContactForm = () => {
     return (
       <>
       <div className="max-w-7xl mx-auto py-7 ">
-        <h1 className="m-10 text-4xl font-extrabold tracking-tight leading-none dark:text-white text-gray-900 md:text-4xl lg:text-5xl">CONTACT ME</h1>
+        <h1 className="m-10 text-4xl font-extrabold dark:text-white text-gray-900 md:text-4xl lg:text-5xl">CONTACT ME</h1>
         <h1 className='mx-10 uppercase dark:text-white text-gray-900 font-semibold text-center'>
           If you are interested to hire me I am always open to new opportunities 
           and interesting projects! Feel free to contact me if you have any other 

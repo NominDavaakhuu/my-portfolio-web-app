@@ -9,9 +9,9 @@ const NotFoundPage = () => {
 
   return (
     <main>
-      <section className="flex flex-col justify-center items-center px-2">
-          <p className="text-7xl text-gray-700 font-bold my-10">404, Oops!</p>
-        <div className="my-4">
+      <section className="flex flex-col justify-center items-center">
+          <p className="text-7xl text-gray-700 font-bold mt-10">404, Oops!</p>
+        <div className="mt-10">
           <Link to="/">
             <Button>Back To Home</Button>
           </Link>          
