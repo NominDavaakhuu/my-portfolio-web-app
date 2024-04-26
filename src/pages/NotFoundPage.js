@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button } from '../components/Button';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom'

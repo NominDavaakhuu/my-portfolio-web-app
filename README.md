@@ -2,7 +2,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Purpose
-This Portfolio app is designed to showcase my projects and skills in visually appealing and interactive manner. It is built using React.js and Tailwind CSS, and it integrates with YouTube API and Email.js API for additional functionalities. The project is licensed under the MIT license.
+This Portfolio app is designed to showcase my projects and skills in visually appealing and interactive manner. It is built using React.js and Tailwind CSS, and it integrates with YouTube API Email.js API and Pexel API for additional functionalities. The project is licensed under the MIT license.
 
 # Contributing 
 This project is developed using Visual Studio Code for coding and version-controlled using Git, hosted on GitHub. GitHub profile link distributed in footer section of the web app.
@@ -21,15 +21,16 @@ Responsive design for optimal viewing on all devices
 Header and footer with responsive navbar
 Dark and light mode toggle
 Search functionality for projects
-Scroll to top button
-Scroll to contact section button
 Integration with YouTube API for fetching videos
+Integration with Pexel API for fetching images
 Integration with Email.js API for contact form submission
-Error handlers, Not Found Page
+Error handlers,Loading state, Not Found Page
 Search result page, Project Detail page
 Back to Home, Back to projects button
+Scroll to top button
+Scroll to contact section button
 
-# Dependencies
+# Dependencies ->
 
 ## React.js
 To create an application named my-app in the my-app directory
@@ -61,6 +62,11 @@ A screen will appear with the API key.
 
 for more information: (https://developers.google.com/youtube/v3/getting-started)
 
+## pexel-api: 
+The Pexels API enables programmatic access to the full Pexels content library, including photos, videos. All content is available free of charge.
+
+(https://www.pexels.com/api)
+
 ## emailjs-com: 
 A client library for sending emails using the Email.js API.
 
@@ -75,8 +81,8 @@ App: The main component that handles routing and renders other components based 
 Header: Contains the navigation bar and toggles for dark/light mode.
 Footer: Contains social media links.
 Home: The landing page with a brief introduction and a form for users to get in touch with me.
-About: A section detailing my background, skills, and interests.
-Resume: A section detailing work history, skills, education and Certifications.
+About: A section detailing my background, skills.
+Resume: A section detailing work history, skills, education and certifications.
 Projects: Displays a list of my projects with the option to search.
 Project Detail: Opens a single project page with more detailed information.
 Search: Returns search result projects.
@@ -86,6 +92,7 @@ If you encounter any issues while using the application, please feel free to rep
 
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 
 ## Available Scripts

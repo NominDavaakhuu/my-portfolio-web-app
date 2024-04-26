@@ -1,7 +1,7 @@
 import { useTitle } from "../hooks/useTitle";
 import { useRef } from "react";
 import { NavLink } from "react-router-dom"; 
-import About from "./About/About";
+import Tools from './About/About';
 import ContactForm  from './Contact';
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
                     </button>  
                 </div>
             </div>
-            <About/>
+            <Tools/>
             <div ref={contactRef}>
             <ContactForm/> 
             </div>    
