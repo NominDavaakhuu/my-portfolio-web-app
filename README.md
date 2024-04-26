@@ -33,8 +33,7 @@ Scroll to contact section button
 # Dependencies ->
 
 ## React.js
-To create an application named my-app in the my-app directory
-`npx create-react-app`
+
 To install all required dependencies for the project
 `run npm install` 
 for more instructions : (https://react.dev/learn/installation)
