@@ -13,10 +13,10 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     emailjs.sendForm(
-        'service_8smwpd5', 
-        'template_ag0c4yr', 
+        `${process.env.REACT_APP_SERVICE_ID}`, 
+        `${process.env.REACT_APP_TEMPLATE_ID}`, 
         form.current, 
-        'VRHOmkHq_Qbp077OC')
+        `${process.env.REACT_APP_PUBLIC_KEY}`)
       .then(
         (result) => {
           setStateMessage('Message sent!');
